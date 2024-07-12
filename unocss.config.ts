@@ -2,10 +2,10 @@ import {
   defineConfig,
   presetAttributify,
   presetIcons,
+  presetTypography,
   presetUno,
   presetWebFonts,
   transformerDirectives,
-  // transformerVariantGroup,
 } from 'unocss'
 
 // 主色
@@ -35,6 +35,7 @@ export default defineConfig({
         mono: 'DM Mono',
       },
     }),
+    presetTypography(),
   ],
   transformers: [
     transformerDirectives(),
