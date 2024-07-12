@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "lib": ["DOM", "ESNext"],
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "~/*": ["src/*"]
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "vite/client",
+      "unplugin-vue-router/client"
+    ],
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": ["dist", "dev-dist", "node_modules", "eslint.config.js"]
+}
