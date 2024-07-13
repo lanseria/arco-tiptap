@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AButton: typeof import('@arco-design/web-vue')['Button']
+    AColorPicker: typeof import('@arco-design/web-vue')['ColorPicker']
     AConfigProvider: typeof import('@arco-design/web-vue')['ConfigProvider']
     ADivider: typeof import('@arco-design/web-vue')['Divider']
     ASelect: typeof import('@arco-design/web-vue')['Select']
@@ -27,16 +28,19 @@ declare module 'vue' {
     IconH5: typeof import('@arco-design/web-vue/es/icon')['IconH5']
     IconH6: typeof import('@arco-design/web-vue/es/icon')['IconH6']
     IconHighlight: typeof import('@arco-design/web-vue/es/icon')['IconHighlight']
+    IconImage: typeof import('@arco-design/web-vue/es/icon')['IconImage']
     IconItalic: typeof import('@arco-design/web-vue/es/icon')['IconItalic']
     IconOrderedList: typeof import('@arco-design/web-vue/es/icon')['IconOrderedList']
     IconQuote: typeof import('@arco-design/web-vue/es/icon')['IconQuote']
     IconRedo: typeof import('@arco-design/web-vue/es/icon')['IconRedo']
     IconStrikethrough: typeof import('@arco-design/web-vue/es/icon')['IconStrikethrough']
+    IconUnderline: typeof import('@arco-design/web-vue/es/icon')['IconUnderline']
     IconUndo: typeof import('@arco-design/web-vue/es/icon')['IconUndo']
     IconUnorderedList: typeof import('@arco-design/web-vue/es/icon')['IconUnorderedList']
     ParentSelect: typeof import('./src/components/ParentSelect.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TiptapColorPicker: typeof import('./src/components/TiptapColorPicker.vue')['default']
     TiptapEditor: typeof import('./src/components/TiptapEditor.vue')['default']
   }
 }

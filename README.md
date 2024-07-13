@@ -1,39 +1,55 @@
-# Arco Uno Basic Template
+# Arco Tiptap Editor Demo
 
-## Features
+为了更好的使用在您的项目中，您参考项目中的代码复制粘贴即可，这样的作法可能更适合您
 
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
+你可能注意到，我并没有使用 `AColorPicker`组件，因为会引发一些bug
 
-- 🗂 [File based routing](./src/pages)
+## 目前的问题
 
-- 📦 [Components auto importing](./src/components)
+- 文字大小功能未做
+- 文字字体未做
 
-- 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
+> 与 unocss 与 arco.design 加上 tiptap 实现的富文本功能
 
-- 😃 Use icons from any icon sets in [Pure CSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
+## 文档结构
 
-- 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
+- **Document**: 定义编辑器的基础文档结构。
+- **Paragraph**: 定义段落。
+- **Heading**: 定义标题。
+- **Blockquote**: 定义引用块。
 
-- ✅ Use [Arco UI](https://arco.design/vue/docs/start) UI Framework
+## 列表
 
-- 🦾 TypeScript, of course
+- **OrderedList**: 有序列表。
+- **BulletList**: 无序列表。
+- **ListItem**: 列表项。
 
-- ☁️ Deploy on Netlify, zero-config
+## 文本样式
 
-## Try it now!
+- **Bold**: 加粗文本。
+- **Italic**: 斜体文本。
+- **Strike**: 删除线文本。
+- **Underline**: 下划线文本。
+- **Highlight**: 高亮文本。
+- **Color**: 改变文本颜色。
+- **TextStyle**: 允许应用自定义的文本样式。
 
-> arco-uno-basic-template requires Node >=14.18
+## 图像
 
-### GitHub Template
+- **Image**: 插入图片。
 
-[Create a repo from this template on GitHub](https://github.com/lanseria/arco-uno-basic-template/generate).
+## 对齐方式
 
-### Clone to local
+- **TextAlign**: 文字对齐（左对齐、右对齐、居中对齐）。
 
-If you prefer to do it manually with the cleaner git history
+## 占位符
 
-```bash
-npx degit lanseria/arco-uno-basic-template my-arco-uno-app
-cd my-arco-uno-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
-```
+- **Placeholder**: 显示占位符文本。
+
+## 历史记录
+
+- **History**: 撤销和重做功能。
+
+## 光标
+
+- **Dropcursor**: 拖放光标。
