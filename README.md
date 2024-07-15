@@ -1,5 +1,7 @@
 # Arco Tiptap Editor Demo
 
+在线预览: [Demo](https://arco-tiptap.netlify.app/)
+
 为了更好的使用在您的项目中，您参考项目中的代码复制粘贴即可，这样的作法可能更适合您
 
 你可能注意到，我并没有使用 `AColorPicker`组件，因为会引发一些bug
