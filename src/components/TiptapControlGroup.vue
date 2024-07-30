@@ -15,6 +15,14 @@ const textStyleColor = computed(() => {
   }
   return '#000000'
 })
+
+const textFontSize = computed(() => {
+  console.log(props.editor.getAttributes('style'))
+  if (props.editor.getAttributes('style').fontSize) {
+    return props.editor.getAttributes('style').fontSize
+  }
+  return 14
+})
 function handleInsertImage() {
   props.editor.chain().focus().setImage({ src: 'https://placehold.co/800x400/6A00F5/white' }).run()
 }
@@ -25,6 +33,9 @@ function handleInsertImageUrl() {
   if (text !== null) {
     props.editor.chain().focus().setImage({ src: text }).run()
   }
+}
+function setFontSize(size: any) {
+  props.editor.chain().focus().setFontSize(size).run()
 }
 </script>
 
@@ -76,7 +87,7 @@ function handleInsertImageUrl() {
           </template>
         </AButton>
       </ATooltip>
-
+      <ASelect :model-value="textFontSize" :options="[12, 14, 16, 18, 20]" @change="setFontSize" />
       <ADivider direction="vertical" />
 
       <ATooltip content="加粗">
