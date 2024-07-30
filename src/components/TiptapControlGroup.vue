@@ -190,7 +190,7 @@ function handleInsertImageUrl() {
 
 <style lang="css" scoped>
 .control-group {
-  @apply border-b-1px pb-2;
+  @apply border-b-1px p-2;
 }
 .button-group {
   @apply flex gap-2 flex-wrap;

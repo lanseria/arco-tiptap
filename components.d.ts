@@ -11,6 +11,7 @@ declare module 'vue' {
     AColorPicker: typeof import('@arco-design/web-vue')['ColorPicker']
     AConfigProvider: typeof import('@arco-design/web-vue')['ConfigProvider']
     ADivider: typeof import('@arco-design/web-vue')['Divider']
+    AScrollbar: typeof import('@arco-design/web-vue')['Scrollbar']
     ASelect: typeof import('@arco-design/web-vue')['Select']
     ASpace: typeof import('@arco-design/web-vue')['Space']
     ATooltip: typeof import('@arco-design/web-vue')['Tooltip']

@@ -106,16 +106,17 @@ onBeforeUnmount(() => {
 <template>
   <div v-if="editor" class="editor">
     <TiptapControlGroup :editor="editor" />
-    <EditorContent class="editor-content" :editor="editor" />
+    <AScrollbar class="h-400px overflow-auto" outer-class="p-2">
+      <EditorContent class="editor-content" :editor="editor" />
+    </AScrollbar>
   </div>
 </template>
 
 <style lang="css" scoped>
 .editor {
-  @apply border p-2 rounded;
+  @apply border rounded w-1000px;
 }
-
-.editor-content :deep(.tiptap) {
+.editor-content {
   @apply p-2;
 }
 .editor-content :deep(.tiptap p.is-editor-empty:first-child::before) {
