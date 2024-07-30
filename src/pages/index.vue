@@ -26,6 +26,11 @@ function handleOpen(url: string) {
         <img class="inline-block h-18 w-18" src="/vue.js.png">
         <span class="mt--2 text-green5">Vue.js</span>
       </div>
+      <div text="3xl gray4" m="x-4 y-auto" i-carbon-add="" transform="" transition-all-500="" hover:rotate-135="" />
+      <div class="flex flex-col children:mx-auto" @click="handleOpen('https://unocss.dev/')">
+        <img class="inline-block h-18 w-18" src="/unocss.svg">
+        <span class="mt--2 text-gray5">unocss</span>
+      </div>
     </div>
     <div class="flex flex-col gap-4">
       <div>Tiptap Editor</div>
