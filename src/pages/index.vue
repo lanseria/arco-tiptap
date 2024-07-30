@@ -27,7 +27,12 @@ function handleOpen(url: string) {
         <span class="mt--2 text-green5">Vue.js</span>
       </div>
     </div>
-    <TiptapEditor v-model="content" />
+    <div class="flex flex-col gap-4">
+      <div>Tiptap Editor</div>
+      <TiptapEditor v-model="content" />
+      <div>Tiptap Viewer</div>
+      <TiptapViewer :content="content" />
+    </div>
     <nav mt-6 inline-flex gap-2 text-xl>
       <button icon-btn @click="toggleDark()">
         <div i-carbon-sun dark:i-carbon-moon />
