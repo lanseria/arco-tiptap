@@ -42,6 +42,7 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TiptapColorPicker: typeof import('./src/components/TiptapColorPicker.vue')['default']
+    TiptapControlGroup: typeof import('./src/components/TiptapControlGroup.vue')['default']
     TiptapEditor: typeof import('./src/components/TiptapEditor.vue')['default']
   }
 }
