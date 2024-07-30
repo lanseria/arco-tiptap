@@ -13,6 +13,7 @@ declare module 'vue' {
     ADivider: typeof import('@arco-design/web-vue')['Divider']
     ASelect: typeof import('@arco-design/web-vue')['Select']
     ASpace: typeof import('@arco-design/web-vue')['Space']
+    ATooltip: typeof import('@arco-design/web-vue')['Tooltip']
     ATypography: typeof import('@arco-design/web-vue')['Typography']
     ATypographyTitle: typeof import('@arco-design/web-vue')['TypographyTitle']
     Hello: typeof import('./src/components/Hello.vue')['default']
