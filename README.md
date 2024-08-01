@@ -6,6 +6,25 @@
 
 你可能注意到，我并没有使用 `AColorPicker`组件，因为会引发一些bug
 
+## 迁移至项目需要注意不要遗漏
+
+- 迁移 unocss.config.ts
+
+```
+presetTypography(),
+```
+
+```
+  safelist: [
+    'text-sm',
+    'prose',
+    'dark:prose-invert',
+    'max-w-full',
+    'prose-truegray',
+    'focus:outline-none',
+  ],
+```
+
 ## 目前的问题
 
 - 文字字体未做

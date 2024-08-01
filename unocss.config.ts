@@ -29,6 +29,14 @@ export default defineConfig({
     }),
     presetTypography(),
   ],
+  safelist: [
+    'text-sm',
+    'prose',
+    'dark:prose-invert',
+    'max-w-full',
+    'prose-truegray',
+    'focus:outline-none',
+  ],
   transformers: [
     transformerDirectives(),
     // transformerVariantGroup(),

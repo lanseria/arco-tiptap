@@ -12,22 +12,22 @@ function handleOpen(url: string) {
 <template>
   <div class="flex flex-col items-center">
     <div class="mb-6 inline-flex cursor-default text-2xl font-300">
-      <div class="flex flex-col children:mx-auto" @click="handleOpen('https://tiptap.dev')">
+      <div class="logo-with-text" @click="handleOpen('https://tiptap.dev')">
         <img class="inline-block h-18 w-18" src="/favicon.png">
         <span class="mt--2 text-gray5">Tiptap</span>
       </div>
-      <div text="3xl gray4" m="x-4 y-auto" i-carbon-add="" transform="" transition-all-500="" hover:rotate-135="" />
-      <div class="flex flex-col children:mx-auto" @click="handleOpen('https://arco.design')">
+      <div class="icon-plus" />
+      <div class="logo-with-text" @click="handleOpen('https://arco.design')">
         <img class="inline-block h-18 w-18" src="/arco.design.png">
         <span class="mt--2 text-blue5">Arco.Design</span>
       </div>
-      <div text="3xl gray4" m="x-4 y-auto" i-carbon-add="" transform="" transition-all-500="" hover:rotate-135="" />
-      <div class="flex flex-col children:mx-auto" @click="handleOpen('https://vuejs.org')">
+      <div class="icon-plus" />
+      <div class="logo-with-text" @click="handleOpen('https://vuejs.org')">
         <img class="inline-block h-18 w-18" src="/vue.js.png">
         <span class="mt--2 text-green5">Vue.js</span>
       </div>
-      <div text="3xl gray4" m="x-4 y-auto" i-carbon-add="" transform="" transition-all-500="" hover:rotate-135="" />
-      <div class="flex flex-col children:mx-auto" @click="handleOpen('https://unocss.dev/')">
+      <div class="icon-plus" />
+      <div class="logo-with-text" @click="handleOpen('https://unocss.dev/')">
         <img class="inline-block h-18 w-18" src="/unocss.svg">
         <span class="mt--2 text-gray5">unocss</span>
       </div>
@@ -53,3 +53,12 @@ function handleOpen(url: string) {
     </nav>
   </div>
 </template>
+
+<style lang="css" scoped>
+.logo-with-text {
+  @apply flex flex-col transform cursor-pointer transition-all-500 children:mx-auto hover:scale-110;
+}
+.icon-plus {
+  @apply text-3xl text-gray4 mx-4 my-auto i-carbon-add transform transition-all-500 hover:rotate-135;
+}
+</style>
