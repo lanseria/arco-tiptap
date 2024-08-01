@@ -23,7 +23,7 @@ import History from '@tiptap/extension-history'
 import Dropcursor from '@tiptap/extension-dropcursor'
 
 import { Editor, EditorContent } from '@tiptap/vue-3'
-import FontSize from '~/composables/tiptap/FontSize'
+import { FontSize } from '~/composables/tiptap/FontSize'
 
 const props = defineProps({
   modelValue: {
@@ -58,6 +58,7 @@ onMounted(() => {
       Highlight,
       Color,
       TextStyle,
+      FontSize,
       TextAlign.configure({
         types: ['heading', 'paragraph'],
       }),
@@ -77,7 +78,6 @@ onMounted(() => {
       //
       History,
       Dropcursor,
-      FontSize,
     ],
     editorProps: {
       attributes: {

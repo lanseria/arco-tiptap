@@ -17,9 +17,8 @@ const textStyleColor = computed(() => {
 })
 
 const textFontSize = computed(() => {
-  console.log(props.editor.getAttributes('style'))
-  if (props.editor.getAttributes('style').fontSize) {
-    return props.editor.getAttributes('style').fontSize
+  if (props.editor.getAttributes('textStyle').fontSize) {
+    return props.editor.getAttributes('textStyle').fontSize
   }
   return 14
 })
@@ -33,6 +32,9 @@ function handleInsertImageUrl() {
   if (text !== null) {
     props.editor.chain().focus().setImage({ src: text }).run()
   }
+}
+function setColor(color: string) {
+  props.editor.chain().focus().setColor(color).run()
 }
 function setFontSize(size: any) {
   props.editor.chain().focus().setFontSize(size).run()
@@ -87,7 +89,7 @@ function setFontSize(size: any) {
           </template>
         </AButton>
       </ATooltip>
-      <ASelect :model-value="textFontSize" :options="[12, 14, 16, 18, 20]" @change="setFontSize" />
+      <ASelect class="w-80px" :model-value="textFontSize" :options="[12, 14, 16, 18, 20]" @change="setFontSize" />
       <ADivider direction="vertical" />
 
       <ATooltip content="加粗">
@@ -175,7 +177,7 @@ function setFontSize(size: any) {
       <ATooltip content="字体颜色">
         <TiptapColorPicker
           :value="textStyleColor"
-          @input="editor.chain().focus().setColor($event.target.value).run()"
+          @input="setColor($event.target.value)"
         />
       </ATooltip>
 

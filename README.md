@@ -8,7 +8,6 @@
 
 ## 目前的问题
 
-- 文字大小功能未做
 - 文字字体未做
 
 > 与 unocss 与 arco.design 加上 tiptap 实现的富文本功能
@@ -17,6 +16,7 @@
 
 - **Document**: 定义编辑器的基础文档结构。
 - **Paragraph**: 定义段落。
+- **FontSize**: 定义字体大小。
 - **Heading**: 定义标题。
 - **Blockquote**: 定义引用块。
 
