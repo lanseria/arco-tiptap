@@ -1,14 +1,14 @@
+import type { ConfigEnv, UserConfig } from 'vite'
 import path from 'node:path'
 import { cwd } from 'node:process'
-import type { ConfigEnv, UserConfig } from 'vite'
-import { loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 import { ArcoResolver } from 'unplugin-vue-components/resolvers'
+import Components from 'unplugin-vue-components/vite'
 import VueRouter from 'unplugin-vue-router/vite'
+import { loadEnv } from 'vite'
 
 export default ({ mode }: ConfigEnv): UserConfig => {
   const root = cwd()
@@ -17,17 +17,6 @@ export default ({ mode }: ConfigEnv): UserConfig => {
     server: {
       host: env.VITE_HOST,
       port: +env.VITE_PORT,
-      // proxy: {
-      //   '^\/api\/': {
-      //     target: env.VITE_PROXY_URL,
-      //     changeOrigin: true,
-      //     xfwd: true,
-      //     rewrite: (path) => {
-      //       const replacePath = path.replace(/^\/api/, '')
-      //       return replacePath
-      //     },
-      //   },
-      // },
     },
     resolve: {
       alias: {
@@ -79,6 +68,29 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       include: [
         '@arco-design/web-vue/es/locale/lang/zh-cn',
         '@vueuse/core',
+        '@tiptap/vue-3',
+        '@tiptap/extension-text-align',
+        '@tiptap/extension-blockquote',
+        '@tiptap/extension-document',
+        '@tiptap/extension-paragraph',
+        '@tiptap/extension-heading',
+        '@tiptap/extension-text',
+        '@tiptap/extension-ordered-list',
+        '@tiptap/extension-bullet-list',
+        '@tiptap/extension-image',
+        '@tiptap/extension-bold',
+        '@tiptap/extension-italic',
+        '@tiptap/extension-strike',
+        '@tiptap/extension-color',
+        '@tiptap/extension-text-style',
+        '@tiptap/extension-list-item',
+        '@tiptap/extension-highlight',
+        '@tiptap/extension-underline',
+        '@tiptap/extension-placeholder',
+        '@tiptap/extension-history',
+        '@tiptap/extension-dropcursor',
+        '@tiptap/core',
+
       ],
     },
 
