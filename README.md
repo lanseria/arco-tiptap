@@ -27,7 +27,9 @@ presetTypography(),
 
 ## 目前的问题
 
-- 文字字体未做
+- 文字字体未做(需帮助)
+- 图片大小无法控制(需帮助)
+- 无表格功能(暂时)
 
 > 与 unocss 与 arco.design 加上 tiptap 实现的富文本功能
 
